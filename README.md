@@ -1,19 +1,19 @@
 # osgi-test-provider
 A Test OSGi provider with maven deployable in Karaf
 ###Maven Goal
-mvn clean install 
+1. mvn clean install 
 
 This will add the project to your local repository.
 
 
 ###Commands to Deploy on Karaf
-bundle:install mvn:biz.neustar.osgi/osgi-test-provider/1.5.0 (Pulls the bundle jar and installs it on karaf and returns a bundleID)
-bundle:list  (will show you your bundle was installed or not)
-bundle:start ${bundleID}
+1. bundle:install mvn:biz.neustar.osgi/osgi-test-provider/1.5.0 (Pulls the bundle jar and installs it on karaf and returns a bundleID)
+2. bundle:list  (will show you your bundle was installed or not)
+3. bundle:start ${bundleID}
 
 ###Check errors
-log:display
+1. log:display
 
 ###To remove a bundle
-bundle:stop ${bundleID}
-bundle:uninstall ${bundleID}
+1. bundle:stop ${bundleID}
+2. bundle:uninstall ${bundleID}
